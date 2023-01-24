@@ -7,12 +7,6 @@ class AppRoutes {
   static const initialRoute = 'home';
 
   static final menuOptions = <MenuOption>[
-    //TODO: borrar home
-    // MenuOption(
-    //     route: 'home',
-    //     icon: Icons.home_max,
-    //     name: 'Home Screen',
-    //     screen: const HomeScreen()),
     MenuOption(
         route: 'listview1',
         icon: Icons.list_alt,
@@ -48,6 +42,16 @@ class AppRoutes {
         icon: Icons.format_align_center_sharp,
         name: 'Inputs',
         screen: const InputsScreen()),
+    MenuOption(
+        route: 'slider',
+        icon: Icons.slideshow,
+        name: 'Slider',
+        screen: const SliderScreen()),
+    MenuOption(
+        route: 'listview',
+        icon: Icons.list_alt,
+        name: 'Listview',
+        screen: const ListviewBuilderScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
